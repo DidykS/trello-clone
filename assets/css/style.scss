@@ -1,0 +1,45 @@
+// VARIABLES
+$body-color: #0079bf;
+$card-color: #ebecf0;
+$text-color: #3e4f6b;
+$footer-text-color: #7f8a9d;
+$danger-color: #de350b;
+$white-color: #ffff;
+
+/* MAIN STYLES */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  background-color: #fffbf8;
+  color: #5a636c;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
