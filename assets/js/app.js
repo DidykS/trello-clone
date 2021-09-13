@@ -69,3 +69,16 @@ function addBoard() {
 }
 
 addBoard()
+
+// CHANGE TITLE
+function changeTitle() {
+  const title = document.querySelectorAll(".boards__title")
+
+  title.forEach((item) => {
+    item.addEventListener("click", (e) => {
+      e.target.textContent = ""
+    })
+  })
+}
+
+changeTitle()
