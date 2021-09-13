@@ -148,4 +148,31 @@ a {
   color: #ffff;
   cursor: pointer;
 }
+
+.addBoard {
+  width: 200px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  background-color: #ffffff3d;
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+}
+
+.addBoard:hover {
+  background-color: #dedede;
+}
 /*# sourceMappingURL=style.css.map */
