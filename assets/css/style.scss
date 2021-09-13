@@ -51,3 +51,108 @@ a {
   margin: 0 auto;
   padding: 15px;
 }
+
+// BOARDS
+.boards {
+  display: flex;
+  width: 100%;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-self: baseline;
+    max-width: 270px;
+    width: 100%;
+    padding: 10px;
+
+    border-radius: 3px;
+    background-color: $card-color;
+    color: $text-color;
+
+    transition: all 0.2s ease;
+
+    &--add {
+      margin-top: 5px;
+      padding: 7px;
+      cursor: pointer;
+
+      border-radius: 3px;
+      color: $footer-text-color;
+
+      &:hover {
+        background-color: #091e4214;
+      }
+    }
+  }
+
+  &__title {
+    padding: 7px;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    &:focus {
+      outline: 2px solid $body-color;
+    }
+  }
+
+  &__list {
+    min-height: 40px;
+
+    &--item {
+      padding: 7px;
+      margin: 5px 0;
+      cursor: pointer;
+
+      background-color: $white-color;
+      border-radius: 3px;
+
+      font-weight: 400;
+    }
+  }
+
+  &__form {
+    margin-top: auto;
+
+    border-radius: 3px;
+
+    &--area {
+      width: 100%;
+      padding: 7px;
+
+      resize: none;
+      outline: none;
+      border: 0;
+      border-radius: 3px;
+      background-color: $white-color;
+      color: $text-color;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+
+    &--add {
+      padding: 10px 15px;
+
+      background-color: $body-color;
+      outline: none;
+      border: 0;
+      border-radius: 3px;
+      color: $white-color;
+      cursor: pointer;
+    }
+
+    &--cancel {
+      padding: 10px 15px;
+      margin-left: 5px;
+
+      background-color: $danger-color;
+      outline: none;
+      border: 0;
+      border-radius: 3px;
+      color: $white-color;
+      cursor: pointer;
+    }
+  }
+}
