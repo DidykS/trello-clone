@@ -65,6 +65,8 @@ function addBoard() {
       <div class="boards__list"></div>
     `
     boards.append(board)
+
+    changeTitle()
   })
 }
 
@@ -72,13 +74,11 @@ addBoard()
 
 // CHANGE TITLE
 function changeTitle() {
-  const title = document.querySelectorAll(".boards__title")
+  const titles = document.querySelectorAll(".boards__title")
 
-  title.forEach((item) => {
+  titles.forEach((item) => {
     item.addEventListener("click", (e) => {
       e.target.textContent = ""
     })
   })
 }
-
-changeTitle()
