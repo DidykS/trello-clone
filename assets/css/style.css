@@ -108,6 +108,7 @@ a {
 
 .boards__form {
   margin-top: auto;
+  display: none;
   border-radius: 3px;
 }
 
