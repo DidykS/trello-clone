@@ -51,3 +51,21 @@ function addTask() {
 }
 
 addTask()
+
+// ADD BOARD
+function addBoard() {
+  const addBoard = document.querySelector(".addBoard")
+  const boards = document.querySelector(".boards")
+
+  addBoard.addEventListener("click", () => {
+    const board = document.createElement("div")
+    board.classList.add("boards__item")
+    board.innerHTML = `
+      <span class="boards__title" contenteditable="true"> Board's name </span>
+      <div class="boards__list"></div>
+    `
+    boards.append(board)
+  })
+}
+
+addBoard()

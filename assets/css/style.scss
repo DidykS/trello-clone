@@ -64,12 +64,17 @@ a {
     max-width: 270px;
     width: 100%;
     padding: 10px;
+    margin-left: 30px;
 
     border-radius: 3px;
     background-color: $card-color;
     color: $text-color;
 
     transition: all 0.2s ease;
+
+    &:first-child {
+      margin-left: 0;
+    }
 
     &--add {
       margin-top: 5px;

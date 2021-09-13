@@ -64,11 +64,16 @@ a {
   max-width: 270px;
   width: 100%;
   padding: 10px;
+  margin-left: 30px;
   border-radius: 3px;
   background-color: #ebecf0;
   color: #3e4f6b;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+}
+
+.boards__item:first-child {
+  margin-left: 0;
 }
 
 .boards__item--add {
