@@ -16,6 +16,38 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
+    <!-- container -->
+    <div class="container">
+      <!-- boards -->
+      <div class="boards">
+        <!-- boards__item -->
+        <div class="boards__item">
+          <span class="boards__title" contenteditable="true">First board</span>
+          <!-- boards__list -->
+          <div class="boards__list">
+            <div class="boards__list--item" draggable="true">Starts card</div>
+          </div>
+          <!-- /boards__list -->
+
+          <form class="boards__form">
+            <textarea
+              id="boards__form--area"
+              class="boards__form--area"
+              placeholder="Card's name"
+            ></textarea>
+            <div class="boards__buttons">
+              <button class="boards__buttons--add">Add card</button>
+              <button class="boards__buttons--cancel">Cancel</button>
+            </div>
+          </form>
+
+          <div class="boards__item--add"><span>+</span> Add card</div>
+        </div>
+      </div>
+      <!-- /boards -->
+    </div>
+    <!-- /container -->
+
     <!-- JavaScript -->
     <script src="./assets/js/app.js"></script>
   </body>
