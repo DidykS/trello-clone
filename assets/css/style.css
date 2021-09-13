@@ -12,10 +12,10 @@ html {
 
 body {
   margin: 0;
-  font-family: "Barlow", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
-  background-color: #fffbf8;
-  color: #5a636c;
+  background-color: #0079bf;
+  color: #ffff;
 }
 
 h1,
