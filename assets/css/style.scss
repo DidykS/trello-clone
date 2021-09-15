@@ -113,6 +113,32 @@ a {
       border-radius: 3px;
 
       font-weight: 400;
+
+      transition: all 0.1s linear;
+
+      & .remove__item {
+        display: flex;
+        justify-content: center;
+        float: right;
+      }
+
+      &:hover {
+        background-color: #dedede;
+      }
+
+      &:hover .remove__item {
+        display: flex;
+      }
+
+      .fa-trash-alt {
+        color: #b6bac5;
+
+        transition: color 0.1s linear;
+      }
+
+      .fa-trash-alt:hover {
+        color: #969698;
+      }
     }
   }
 

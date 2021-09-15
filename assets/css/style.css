@@ -109,6 +109,38 @@ a {
   background-color: #ffff;
   border-radius: 3px;
   font-weight: 400;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.boards__list--item .remove__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  float: right;
+}
+
+.boards__list--item:hover {
+  background-color: #dedede;
+}
+
+.boards__list--item:hover .remove__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.boards__list--item .fa-trash-alt {
+  color: #b6bac5;
+  -webkit-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+}
+
+.boards__list--item .fa-trash-alt:hover {
+  color: #969698;
 }
 
 .boards__form {

@@ -40,7 +40,8 @@ function addTask() {
     let newItem = document.createElement("div")
     newItem.classList.add("boards__list--item")
     newItem.setAttribute("draggable", "true")
-    newItem.textContent = value
+    newItem.innerHTML =
+      value + `<div class="remove__item"><i class="fas fa-trash-alt"></i></div>`
     lists[0].append(newItem)
 
     form.style.display = "none"
@@ -96,6 +97,10 @@ function dragNdrop() {
   const lists = document.querySelectorAll(".boards__list")
 
   listItem.forEach((item) => {
+    item.querySelector(".remove__item").addEventListener("click", () => {
+      item.remove()
+    })
+
     item.addEventListener("dragstart", function () {
       dragItem = this
 
