@@ -57,6 +57,12 @@ a {
   display: flex;
   width: 100%;
 
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   &__item {
     display: flex;
     flex-direction: column;
@@ -65,6 +71,7 @@ a {
     width: 100%;
     padding: 10px;
     margin-left: 30px;
+    // position: relative;
 
     border-radius: 3px;
     background-color: $card-color;
@@ -88,10 +95,16 @@ a {
         background-color: #091e4214;
       }
     }
+
+    &--remove {
+      cursor: pointer;
+    }
   }
 
   &__title {
     padding: 7px;
+    margin-right: 10px;
+    width: 100%;
 
     font-size: 15px;
     font-weight: 500;

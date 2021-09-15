@@ -59,22 +59,46 @@ addTask()
 function addBoard() {
   const addBoard = document.querySelector(".addBoard")
   const boards = document.querySelector(".boards")
+  // const boardsItem = document.querySelectorAll(".boards__item--remove")
 
   addBoard.addEventListener("click", () => {
     const board = document.createElement("div")
     board.classList.add("boards__item")
     board.innerHTML = `
-      <span class="boards__title" contenteditable="true"> Board's name </span>
-      <div class="boards__list"></div>
+    <div class="boards__header">
+      <span class="boards__title" contenteditable="true"
+        >First board
+      </span>
+      <div class="boards__item--remove">
+        <i class="fas fa-ellipsis-h"></i>
+      </div>
+    </div>
+    <div class="boards__list"></div>
     `
     boards.append(board)
 
     changeTitle()
     dragNdrop()
+    removeBoard()
   })
 }
 
 addBoard()
+
+// REMOVE BOARD
+function removeBoard() {
+  const boards = document.querySelectorAll(".boards__item")
+
+  boards.forEach((item) => {
+    item
+      .querySelector(".boards__item--remove")
+      .addEventListener("click", () => {
+        item.remove()
+      })
+  })
+}
+
+removeBoard()
 
 // CHANGE TITLE
 function changeTitle() {
@@ -95,7 +119,7 @@ let dragItem = null
 function dragNdrop() {
   const listItem = document.querySelectorAll(".boards__list--item")
   const lists = document.querySelectorAll(".boards__list")
-
+  // remove task
   listItem.forEach((item) => {
     item.querySelector(".remove__item").addEventListener("click", () => {
       item.remove()
